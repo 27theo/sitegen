@@ -2,7 +2,7 @@ SHELL      := pwsh.exe
 SOURCES    := src/entity.c src/main.c src/md4c-html.c src/md4c.c
 EXECUTABLE := build/main.exe
 CC         := gcc
-FLAGS      := -Wall -std=c17
+FLAGS      := -Wall -std=c11
 
 all:
 	@if ( !(Test-Path build) ) { [void] (New-Item -ItemType "directory" -Name build -Path .) }
